@@ -12,4 +12,4 @@ function degree(n){
         console.log('D');
     }
 }
-console.log('degree(',n,')=>',degree(n))
+console.log('',degree(85))
