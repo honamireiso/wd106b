@@ -1,0 +1,15 @@
+function xs(a,b)(
+let x
+for(var i=a;i<b+1;i++){
+    if(i%3==0){
+        console.log('',i)
+    }
+    else if(i%5==0){
+        console.log('',i)
+    }
+    else if(i%7==0){
+        console.log('',i)
+    }
+}
+)
+console.log('m357(',a,',',b,')=>',xs(a,b))
