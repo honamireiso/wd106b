@@ -1,4 +1,4 @@
-function xs(a,b)(
+function xs(a,b){
 let x
 for(var i=a;i<b+1;i++){
     if(i%3==0){
@@ -11,5 +11,5 @@ for(var i=a;i<b+1;i++){
         console.log('',i)
     }
 }
-)
+}
 console.log('m357(',a,',',b,')=>',xs(a,b))
