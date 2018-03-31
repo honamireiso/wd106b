@@ -1,0 +1,22 @@
+function xs(a,b){
+    let x
+    if(a==b){
+        x=a;
+    }
+    else if(a>b){
+        for(var i;i<b+1;i++){
+            if(b%i==a%i){
+                x=i;
+            }
+        }
+    }
+        else{
+            for(var i;i<a+1;i++){
+                if(a%i==b%i){
+                    x=i;
+                }
+            }
+    }
+    return x
+}
+console.log('commonFactor(12,15)=',xs(12,15))
