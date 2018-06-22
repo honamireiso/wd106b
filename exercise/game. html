@@ -14,9 +14,9 @@
 <form style="position:absolute; left:10px; top:70px">
 你的選擇是　
 <select id="mySelect">
-<option>グー</option>
-<option>チョキ</option>
-<option>パー</option>
+<option>石頭</option>
+<option>剪刀</option>
+<option>布</option>
 </select>
 <input type="button" value="決定" onclick="myGame()">
 </form>
