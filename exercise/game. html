@@ -2,17 +2,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>じゃんけんゲーム</title>
+<title>剪刀石頭布</title>
 </head>
 <body>
 <div id="message1" style="position:absolute; left:10px; top:10px">
-相手の選択は ？
+電腦出的是 ？
 </div>
 <div id="message2" style="position:absolute; left:10px; top:40px">
-勝敗の結果は ？
+結果為 ？
 </div>
 <form style="position:absolute; left:10px; top:70px">
-あなたの選択は　
+你的選擇是　
 <select id="mySelect">
 <option>グー</option>
 <option>チョキ</option>
@@ -26,31 +26,31 @@ function myGame(){
 myNumber = document.getElementById("mySelect").selectedIndex;
 hisNumber = Math.floor(Math.random()*3);
 if( hisNumber == 0 ){
-hisHand = "グー";
+hisHand = "石頭";
 }
 if( hisNumber == 1 ){
-hisHand = "チョキ";
+hisHand = "剪刀";
 }
 if( hisNumber == 2 ){
-hisHand = "パー";
+hisHand = "布";
 }
 if( myNumber - hisNumber == -2 ){
-judge = "あなたの 負け";
+judge = "你輸了";
 }
 if( myNumber - hisNumber == -1 ){
-judge = "あなたの 勝ち";
+judge = "你贏了";
 }
 if( myNumber - hisNumber == 0 ){
-judge = "両者の 引き分け";
+judge = "平手";
 }
 if( myNumber - hisNumber == 1 ){
-judge = "あなたの 負け";
+judge = "你輸了";
 }
 if( myNumber - hisNumber == 2 ){
-judge = "あなたの 勝ち";
+judge = "你贏了";
 }
-document.getElementById("message1").innerHTML = "相手の選択は "+hisHand;
-document.getElementById("message2").innerHTML = "勝敗の結果は "+judge;
+document.getElementById("message1").innerHTML = "電腦的選擇是 "+hisHand;
+document.getElementById("message2").innerHTML = "結果是 "+judge;
 }
 </script>
 
