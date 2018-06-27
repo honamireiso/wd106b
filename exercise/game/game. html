@@ -27,7 +27,6 @@ myNumber = document.getElementById("mySelect").selectedIndex;
 hisNumber = Math.floor(Math.random()*3);
 if( hisNumber == 0 ){
 hisHand = "石頭";
-<img src="石頭.jpg" alt="石頭"/>
 }
 if( hisNumber == 1 ){
 hisHand = "剪刀";
