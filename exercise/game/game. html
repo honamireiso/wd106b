@@ -5,7 +5,6 @@
 <title>剪刀石頭布</title>
 </head>
 <body>
-background-color:#d0e4fe;
 <div id="message1" style="position:absolute; left:10px; top:10px">
 電腦出的是 ？
 </div>
