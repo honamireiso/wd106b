@@ -29,6 +29,9 @@ document.getElementById("pictA1").style.visibility = "hidden";
 document.getElementById("pictA2").style.visibility = "hidden";
 document.getElementById("pictA3").style.visibility = "hidden";
 function myGame(){
+document.getElementById("pictA1").style.visibility = "hidden";
+document.getElementById("pictA2").style.visibility = "hidden";
+document.getElementById("pictA3").style.visibility = "hidden";
 myNumber = document.getElementById("mySelect").selectedIndex;
 hisNumber = Math.floor(Math.random()*3);
 if( hisNumber == 0 ){
@@ -61,9 +64,6 @@ judge = "你贏了";
 document.getElementById("message1").innerHTML = "電腦的選擇是 "+hisHand;
 document.getElementById("message2").innerHTML = "結果是 "+judge;
 }
-document.getElementById("pictA1").style.visibility = "hidden";
-document.getElementById("pictA2").style.visibility = "hidden";
-document.getElementById("pictA3").style.visibility = "hidden";
 </script>
 
 </body>
