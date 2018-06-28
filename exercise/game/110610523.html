@@ -5,6 +5,9 @@
 <title>剪刀石頭布</title>
 </head>
 <body>
+<img id="pictA1" src="石頭.jpg" style="width:100px; height:100px">
+<img id="pictA2" src="剪刀.jpg" style="width:100px; height:100px">
+<img id="pictA3" src="布.jpg" style="width:100px; height:100px">
 <div id="message1" style="position:absolute; left:10px; top:10px">
 電腦出的是 ？
 </div>
@@ -22,9 +25,6 @@
 </form>
 
 <script>
-document.getElementById("pictA1").style.visibility = "hidden";
-document.getElementById("pictA2").style.visibility = "hidden";
-document.getElementById("pictA3").style.visibility = "hidden";
 function myGame(){
 document.getElementById("pictA1").style.visibility = "hidden";
 document.getElementById("pictA2").style.visibility = "hidden";
@@ -33,17 +33,14 @@ myNumber = document.getElementById("mySelect").selectedIndex;
 hisNumber = Math.floor(Math.random()*3);
 if( hisNumber == 0 ){
 hisHand = "石頭";
-<img id="pictA1" src="石頭.jpg"  style="position:absolute; left:10px; top:100px; width:100px; height:100px">
 document.getElementById("pictA1").style.visibility = "visible";
 }
 if( hisNumber == 1 ){
 hisHand = "剪刀";
-<img id="pictA2" src="剪刀.jpg"  style="position:absolute; left:10px; top:100px; width:100px; height:100px">
 document.getElementById("pictA2").style.visibility = "visible";
 }
 if( hisNumber == 2 ){
 hisHand = "布";
-<img id="pictA3" src="布.jpg"  style="position:absolute; left:10px; top:100px; width:100px; height:100px">
 document.getElementById("pictA3").style.visibility = "visible";
 }
 if( myNumber - hisNumber == -2 ){
