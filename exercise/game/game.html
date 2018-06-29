@@ -2,26 +2,26 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>剪刀石頭布</title>
+<title>rock, paper, scissors</title>
 </head>
 <body>
 <img id="pictA1" src="石頭.jpg" style="position:absolute; left:10px; top:100px; width:100px; height:100px">
 <img id="pictA2" src="剪刀.jpg" style="position:absolute; left:10px; top:100px; width:100px; height:100px">
 <img id="pictA3" src="布.jpg" style="position:absolute; left:10px; top:100px; width:100px; height:100px">
 <div id="message1" style="position:absolute; left:10px; top:10px">
-電腦出的是 ？
+what will your rival choose?
 </div>
 <div id="message2" style="position:absolute; left:10px; top:40px">
-結果為 ？
+what is the end？
 </div>
 <form style="position:absolute; left:10px; top:70px">
-你的選擇是　
+you will choose　
 <select id="mySelect">
-<option>石頭</option>
-<option>剪刀</option>
-<option>布</option>
+<option>rock</option>
+<option>scissors</option>
+<option>paper</option>
 </select>
-<input type="button" value="決定" onclick="myGame()">
+<input type="button" value="GO!" onclick="myGame()">
 </form>
 
 <script>
@@ -35,33 +35,33 @@ document.getElementById("pictA3").style.visibility = "hidden";
 myNumber = document.getElementById("mySelect").selectedIndex;
 hisNumber = Math.floor(Math.random()*3);
 if( hisNumber == 0 ){
-hisHand = "石頭";
+hisHand = "rock";
 document.getElementById("pictA1").style.visibility = "visible";
 }
 if( hisNumber == 1 ){
-hisHand = "剪刀";
+hisHand = "scissors";
 document.getElementById("pictA2").style.visibility = "visible";
 }
 if( hisNumber == 2 ){
-hisHand = "布";
+hisHand = "paper";
 document.getElementById("pictA3").style.visibility = "visible";
 }
 if( myNumber - hisNumber == -2 ){
-judge = "你輸了";
+judge = "YOU LOSE!!";
 }
 if( myNumber - hisNumber == -1 ){
-judge = "你贏了";
+judge = "YOU WIN!!";
 }
 if( myNumber - hisNumber == 0 ){
-judge = "平手";
+judge = "DRAW!!!";
 }
 if( myNumber - hisNumber == 1 ){
-judge = "你輸了";
+judge = "YOU LOSE!!";
 }
 if( myNumber - hisNumber == 2 ){
-judge = "你贏了";
+judge = "YOU WIN!!";
 }
-document.getElementById("message1").innerHTML = "電腦的選擇是 "+hisHand;
+document.getElementById("message1").innerHTML = "Your rival choose "+hisHand;
 document.getElementById("message2").innerHTML = "結果是 "+judge;
 }
 </script>
