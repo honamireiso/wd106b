@@ -36,7 +36,6 @@ Shop.mainPage = function () {
     <button onclick="Setting.start()">商店設定</button>
     <button onclick="Shop.todayReport()">本日報表</button>
     <button onclick="Report.start()">全部報表</button>
-    <button onclick="Storage.start()">資料處理</button>
   </div>
   `)
   Ui.title(Shop.shop.name)
