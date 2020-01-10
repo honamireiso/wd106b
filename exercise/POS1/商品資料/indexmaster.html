@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body onload="Shop.masterPage()">
+  <header>
+    <div id="header">
+    <div class="navbar" style="float:left">
+        <a href="../主頁/主頁.html" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); ">主頁</a>
+        <a onclick="Pos.start()" href="#LaPos" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); ">漢堡</a>
+        <a onclick="Pos1.start()" href="#LaPos" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); ">蛋餅</a>
+        <a onclick="Pos2.start()" href="#LaPos" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); ">總匯三明治</a>
+        <a onclick="Pos3.start()" href="#LaPos" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); ">吐司</a>
+        <a onclick="Pos4.start()" href="#LaPos" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); ">抓餅</a>
+        <a onclick="Pos5.start()" href="#LaPos" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); ">中式</a>
+        <a onclick="Pos6.start()" href="#LaPos" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); ">小品</a>
+        <a onclick="Pos7.start()" href="#LaPos" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); ">飲品</a>
+        <div class="dropdown">
+            <input type="button" class="dropbtn" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); " value="設定">
+            <div class="dropdown-content">
+              <a onclick="Shop.todayReport()" href="#LaPos" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); ">本日報表</a>
+              <a onclick="Report.start()" href="#LaPos" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); ">全部報表</a>
+              <a onclick="Setting.start()" id="" href="#LaPos" style="font-family:Verdana; text-shadow: 1px 0px 1px rgb(243, 243, 154); ">商品設定</a>
+            </div>
+        </div>
+    </div>
+    </div>
+  </header>
+  <main>
+    <div id="main" class="table" style="text-align:center">
+    </div>
+  </main>
+  
+  <footer>
+  </footer>
+  <script src="lib/Local.js"></script>
+  <script src="lib/Db.js"></script>
+  <script src="lib/Lib.js"></script>
+  <script src="lib/Ui.js"></script>
+  <script src="shop/Shop.js"></script>
+  <script src="shop/Shop1.js"></script>
+  <script src="shop/Shop2.js"></script>
+  <script src="shop/Shop3.js"></script>
+  <script src="shop/Shop4.js"></script>
+  <script src="shop/Shop5.js"></script>
+  <script src="shop/Shop6.js"></script>
+  <script src="shop/Shop7.js"></script>
+  <script src="shop/Pos.js"></script>
+  <script src="shop/Report.js"></script>
+  <script src="shop/Setting.js"></script>
+  <script src="shop/Storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+  <script src="user/User.js"></script>
+  <script src="lib/Fire.js"></script>
+</body>
+</html>
