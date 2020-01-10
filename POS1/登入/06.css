@@ -1,0 +1,144 @@
+body {
+	background-color: #000000;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#login {
+	float: left;
+	height: 50px;
+	width: 75px;
+	background-color: white;
+}
+
+#register {
+	float: left;
+	height: 50px;
+	width: 75px;
+	background-color: white;
+}
+
+#login p {
+	font-family: "微软雅黑";
+	font-size: larger;
+	position: relative;
+	top: -8px;
+	left: 15px;
+}
+
+#register p {
+	font-family: "微软雅黑";
+	font-size: larger;
+	position: relative;
+	top: -8px;
+	left: 15px;
+}
+
+#login a:hover {
+	font-size: larger;
+	color: #FF0000;
+}
+#login:hover {
+	background-color: cornsilk;
+}
+
+#myDiv {
+	top: 120px;
+	position: relative;
+	margin: auto auto auto auto;
+	width: 600px;
+	height: 700px;
+}
+
+
+#myForm {
+	top: 30px;
+	position: relative;
+	margin: auto auto auto auto;
+	width: 550px;
+	height: 500px;
+}
+
+
+#myNav {
+	position: relative;
+	margin: auto auto auto auto;
+	top: 3.5em;
+	background-color: #CCCCCC;
+	width: 150px;
+	height: 50px;
+}
+
+#div1 {
+	width: 100px;
+	height: 100px;
+}
+
+#usernameDiv,#passwordDiv,#repasswordDiv,#vercodeDiv {
+	background-color: #CCCCCC;
+	height: 34px;
+	border: 1px solid #CCCCCC;
+}
+
+#passwordDiv,#repasswordDiv,#vercodeDiv {
+	margin-top: 30px;
+}
+
+#usernameDiv input,#passwordDiv input,#repasswordDiv input,#vercodeDiv input {
+	padding-left: 8px;
+	margin-left: 50px;
+	width: 190px;
+	height: 28px;
+	border: 2px solid red;
+	font-size: 20px;
+}
+
+#repasswordDiv input {
+	margin-left: 14px;
+}
+
+#vercodeDiv input {
+	margin-left: 32px;
+}
+
+#submitDiv {
+	margin-top: 50px;
+}
+
+#submitDiv input {
+	font-family:  "微软雅黑";
+	font-size: large;
+	font-style: bold;
+	color: black;
+	width: 100px;
+	height: 50px;
+}
+
+#submit {
+	margin-left: 200px;
+	border: none;
+	display: block;
+}
+
+#submit:hover {
+	background-color: black;
+	font-size: larger;
+	font-style: bold;
+	text-decoration: underline;
+	color: white;
+}
+
+.s {
+	margin-left: 60px;
+	font-family: "微软雅黑";
+	font-size: large;
+}
+
+.spanStyle {
+	color: red;
+	font-family: "微软雅黑";
+	font-size: larger;
+}
